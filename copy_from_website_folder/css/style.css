@@ -1,0 +1,15 @@
+﻿/*Universal*/
+
+body {
+    background-color: blue;
+    margin: 0;
+}
+
+header {
+    background-color: #ffd800;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}

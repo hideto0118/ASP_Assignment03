@@ -1,0 +1,43 @@
+﻿@{
+    Page.Title = "Miracle Vehicles";
+    Layout = "_Layout.cshtml";
+
+    //var bd = Database.Open("ASP_Assignment03");
+    //var query = "SELECT * FROM Cars";
+    Car car = new Car(100,"Toyota", "Camry", 2015, "Blue", 2000, 2, "Nothing", 2000, "Good condition");
+    List<Car> list = new car.find_all(); 
+}
+
+<div class="container">
+    <table border="1">
+        <tr>
+            <th>VIN</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Color</th>
+            <th>Mileage</th>
+            <th>Accidents</th>
+            <th>Total Damage</th>
+            <th>Price</th>
+            @*<th>Soecial Feathures</th>*@
+        </tr>
+
+        @foreach (var value in list)
+        {
+            <tr>
+                <td>value.Vin</td>
+                <td>value.Make</td>
+                <td>value.Model</td>
+                <td>value.Year</td>
+                <td>value.Color</td>
+                <td>value.Mileage</td>
+                <td>value.Accidents</td>
+                <td>value.TotalDamage</td>
+                <td>value.Price</td>
+            </tr>
+        }
+
+        </table>
+    
+</div>

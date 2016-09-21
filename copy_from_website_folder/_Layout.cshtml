@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>@Page.Title</title>
+        @RenderSection("head", required: false)
+        <link href="~/css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                LOGO
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="~/ContentPage.cshtml">Home</a></li>
+                    <li><a href="Admin.cshtml">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+        @RenderBody()
+    </body>
+</html>
